@@ -1,58 +1,44 @@
-# S/AGENCY COMMAND CENTER · LUMEN
+# S/AGENCY COMMAND CENTER · LUMEN v2
 
-**Production-ready dark-mode SaaS dashboard** matching the LUMEN Intelligence & Operations design system.
+Production dark-mode multi-agent SaaS: glass orbs, Base44 super-agent, Stripe marketplace, TTS/TTSL, open telephony.
 
-![S/Agency Command Center](https://github.com/saifsoub/s-agency-command-center)
+**Repo:** https://github.com/saifsoub/s-agency-command-center  
+**Vercel project:** `s-agency-command-center` (link GitHub App for auto-deploy)
 
-## Live Demo
+## Routes
 
-After Vercel deploy the production URL will appear here.
+| Path | Purpose |
+|------|---------|
+| `/` | Marketing landing |
+| `/app` | Command dashboard |
+| `/app/agents` | Agent roster + detail |
+| `/app/alerts` | Alerts board |
+| `/app/compliance` | Risk / EMARATAX |
+| `/app/orchestration` | HITL pipelines |
+| `/app/mcps` | MCP connectors |
+| `/app/plugins` | Plugins |
+| `/app/marketplace` | Orb marketplace (Stripe) |
+| `/app/voice` | TTS · TTSL · LiveKit/FreeSWITCH |
 
-## Features
+## Design system
 
-- **S/AGENCY Command Center** — full glassmorphism dark UI
-- **LUMEN Federated AI Core** — animated glass orb with holographic consciousness silhouette
-- **Active Agents Roster** — elegant floating glass orbs (no human photos) with codenames, status, HR/BPM, location, load
-- **World Map Theater** — Gulf region focus with live RC-* pins and data streams
-- **Threat / Risk Matrix** — real-time gauges (Tax Evasion, Audit Priority…)
-- **Live Encrypted Feeds** — streaming console with simulated live events
-- **Multi-Agent Chat** — secure command console with LUMEN replies
-- **Transaction Flow** — live area chart
-- Live GST clock, TOP SECRET badges, clearance L5
+`src/design-system/orbs` — Soft Sunday Morning + LUMEN glass families (matches orbs_library.png).
 
 ## Stack
 
-- React 18 + Vite 6
-- Tailwind CSS 3 (navy / cyan tokens, glass utilities)
-- Framer Motion
-- Recharts
-- Lucide icons
-- TanStack Query + Sonner ready
+React 18 · Vite 6 · Tailwind · Framer Motion · Recharts · TanStack Query · Stripe · Base44-ready
 
-## Local Development
+## Voice & telephony
 
-```bash
-npm install
-npm run dev
-```
+- `src/lib/voice.js` — SpeechSynthesis TTS + TTSL narrator
+- `src/lib/telephony.js` — open event bus → LiveKit / FreeSWITCH / Asterisk / Jitsi / Janus
 
-Open http://localhost:5173
+## Base44 super-agent
 
-## Production Build
+See `docs/BASE44_SUPER_AGENT.md` and `base44/config.jsonc`.
 
 ```bash
-npm run build
-npm run preview
+npm install && npm run dev
 ```
-
-## Design Match
-
-Faithfully implements the referenced mockups:
-
-- Title: **S/AGENCY COMMAND CENTER** · LUMEN • INTELLIGENCE & OPERATIONS
-- Agents as transparent glass orbs with unique glow tints
-- Dark navy/charcoal glassmorphism + cyan neon accents
-- Central floating LUMEN orb over the map
-- Professional high-end SaaS dashboard aesthetic (8k ready)
 
 © S/Agency · LUMEN Intelligence & Operations
