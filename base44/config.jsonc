@@ -1,0 +1,14 @@
+{
+  "name": "s-agency-lumen",
+  "site": {
+    "serveCommand": "npm run dev"
+  },
+  "entities": [
+    "Agent",
+    "Alert",
+    "Job",
+    "Orb",
+    "AgentConfig",
+    "CallSession"
+  ]
+}
