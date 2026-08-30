@@ -1,17 +1,21 @@
 import { 
-  LayoutDashboard, Search, Receipt, ShieldCheck, Bot, Bell, 
-  Settings, HelpCircle, ChevronRight
+  LayoutDashboard, ShieldCheck, Bot, Bell, 
+  Settings, HelpCircle, ChevronRight,
+  GitBranch, Cable, Puzzle, ShoppingBag, Mic
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { NAV_ITEMS } from '@/data/agents'
 
 const iconMap = {
   LayoutDashboard,
-  Search,
-  Receipt,
   ShieldCheck,
   Bot,
   Bell,
+  GitBranch,
+  Cable,
+  Puzzle,
+  ShoppingBag,
+  Mic,
 }
 
 export function Sidebar({ active = 'dashboard', onNavigate }) {
