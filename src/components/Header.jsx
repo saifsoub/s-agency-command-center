@@ -25,7 +25,7 @@ export function Header() {
             </span>
           </h1>
           <p className="text-[11px] text-cyan-400/70 font-mono tracking-wider">
-            LUMEN · INTELLIGENCE & OPERATIONS
+            INTELLIGENCE & OPERATIONS
           </p>
         </div>
       </div>
