@@ -68,10 +68,10 @@ export function Sidebar({ active = 'dashboard', onNavigate }) {
         <div className="pt-2 mt-2 border-t border-white/5">
           <div className="px-3 py-2 flex items-center gap-2">
             <div className="w-7 h-7 rounded-full bg-gradient-to-br from-cyan-500 to-blue-700 flex items-center justify-center text-[10px] font-bold text-white">
-              SA
+              DU
             </div>
             <div className="flex-1 min-w-0">
-              <div className="text-xs font-medium text-cyan-100 truncate">S. Alsoub</div>
+              <div className="text-xs font-medium text-cyan-100 truncate">Demo User</div>
               <div className="text-[10px] text-cyan-500/70 font-mono">CLEARANCE · L5</div>
             </div>
           </div>
