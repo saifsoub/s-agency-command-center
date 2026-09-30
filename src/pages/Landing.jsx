@@ -11,7 +11,7 @@ export default function Landing() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="relative z-10 text-center max-w-4xl">
           <div className="flex justify-center mb-8"><LumenCoreOrb size="2xl" /></div>
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-cyan-50 mb-4">
-            S/AGENCY
+            AGENCY
             <span className="block text-cyan-400 text-2xl md:text-3xl mt-2 font-mono tracking-widest">COMMAND CENTER</span>
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-10">
