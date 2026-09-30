@@ -30,7 +30,7 @@ export function AgentChat() {
         ...m,
         {
           id: Date.now() + 1,
-          agent: 'LUMEN',
+          agent: 'CORE',
           text: 'Acknowledged. Routing to appropriate agent swarm. Cognitive load +2%.',
           ts: new Date().toLocaleTimeString('en-GB', { hour12: false, timeZone: 'Asia/Dubai' }).slice(0, 8),
         },
@@ -60,9 +60,9 @@ export function AgentChat() {
           >
             <div className={cn(
               'inline-block max-w-[90%] px-2.5 py-1.5 rounded-lg',
-              m.agent === 'LUMEN' && 'bg-cyan-500/10 border border-cyan-500/20 text-cyan-100',
+              m.agent === 'CORE' && 'bg-cyan-500/10 border border-cyan-500/20 text-cyan-100',
               m.agent === 'OPERATOR' && 'bg-blue-500/10 border border-blue-500/20 text-blue-100',
-              m.agent !== 'LUMEN' && m.agent !== 'OPERATOR' && 'bg-white/5 border border-white/10 text-slate-200'
+              m.agent !== 'CORE' && m.agent !== 'OPERATOR' && 'bg-white/5 border border-white/10 text-slate-200'
             )}>
               <div className="flex items-center gap-2 mb-0.5">
                 <span className="font-mono text-[9px] text-cyan-400/80">{m.agent}</span>
