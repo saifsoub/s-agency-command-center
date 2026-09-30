@@ -19,7 +19,7 @@ export function LiveFeeds() {
         const newFeed = {
           id: Date.now(),
           time: new Date().toLocaleTimeString('en-GB', { hour12: false, timeZone: 'Asia/Dubai' }).slice(0, 8),
-          source: ['LUMEN', 'AETHER', 'NEXUS', 'SYSTEM', 'CIPHER'][Math.floor(Math.random() * 5)],
+          source: ['CORE', 'AETHER', 'NEXUS', 'SYSTEM', 'CIPHER'][Math.floor(Math.random() * 5)],
           msg: [
             'Packet integrity verified · zero drift',
             'Anomaly threshold recalibrated',
