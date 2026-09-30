@@ -16,7 +16,7 @@ export const THREATS = [
 
 export const FEEDS = [
   { id: 1, time: '14:26:41', source: 'EMARATAX', msg: 'New high-value transfer flagged · AED 4.2M · Entity RC-2041', type: 'alert' },
-  { id: 2, time: '14:25:12', source: 'LUMEN', msg: 'Agent AETHER completed multi-hop recon on Gulf corridor', type: 'info' },
+  { id: 2, time: '14:25:12', source: 'CORE', msg: 'Agent AETHER completed multi-hop recon on Gulf corridor', type: 'info' },
   { id: 3, time: '14:24:03', source: 'NEXUS', msg: 'Real-time graph delta +12% on free-zone entities', type: 'data' },
   { id: 4, time: '14:22:55', source: 'SYSTEM', msg: 'Federated core heartbeat · latency 18ms · integrity 99.97%', type: 'system' },
   { id: 5, time: '14:21:18', source: 'CIPHER', msg: 'Encrypted packet batch decrypted · 847 records', type: 'info' },
@@ -24,10 +24,10 @@ export const FEEDS = [
 ]
 
 export const CHAT_LOG = [
-  { id: 1, agent: 'LUMEN', text: 'All federated nodes synchronized. Cognitive assurance online.', ts: '14:27:01' },
+  { id: 1, agent: 'CORE', text: 'All federated nodes synchronized. Cognitive assurance online.', ts: '14:27:01' },
   { id: 2, agent: 'AETHER', text: 'Requesting elevated clearance for RC-1987 deep audit.', ts: '14:26:48' },
   { id: 3, agent: 'ORACLE', text: 'Probability matrix updated. Recommend prioritizing SHJ free-zone cluster.', ts: '14:26:22' },
-  { id: 4, agent: 'LUMEN', text: 'Clearance granted. AETHER — proceed with multi-agent swarm.', ts: '14:26:05' },
+  { id: 4, agent: 'CORE', text: 'Clearance granted. AETHER — proceed with multi-agent swarm.', ts: '14:26:05' },
   { id: 5, agent: 'NEXUS', text: 'Swarm topology locked. 4 agents allocated.', ts: '14:25:51' },
 ]
 
