@@ -1,17 +1,17 @@
-# Agency · LUMEN — Investor Deck Outline
+# Agency — Investor Deck Outline
 
 > Open in Gamma / Canva / Keynote. Dark navy + cyan neon aesthetic.
 
 ## 1. Title
 **AGENCY**  
-COMMAND CENTER · LUMEN  
+COMMAND CENTER  
 Federated AI Operations Platform · 2026
 
 ## 2. Problem
 Fragmented agent tools · no shared glass cockpit · regulated theaters need clearance-aware AI with human gates.
 
 ## 3. Solution
-One Command Center: LUMEN Super-Agent (Base44) · Glass Orb DS · multi-agent swarm · compliance matrices · open telephony · TTS/TTSL · Stripe Orb Market.
+One Command Center: Super-Agent (Base44) · Glass Orb DS · multi-agent swarm · compliance matrices · open telephony · TTS/TTSL · Stripe Orb Market.
 
 ## 4. Product surfaces
 Landing · Dashboard · Agents · Alerts · Compliance · Orchestration · MCPs · Plugins · Marketplace · Voice/Tel
