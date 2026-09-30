@@ -5,7 +5,7 @@ import { Mic, Phone, PhoneOff, Volume2 } from 'lucide-react'
 import { toast } from 'sonner'
 
 export default function VoiceTelPage() {
-  const [text, setText] = useState('LUMEN federated core online. Cognitive assurance active.')
+  const [text, setText] = useState('Federated core online. Cognitive assurance active.')
   const [connected, setConnected] = useState(false)
   const [participants, setParticipants] = useState([])
   const [voices, setVoices] = useState([])
