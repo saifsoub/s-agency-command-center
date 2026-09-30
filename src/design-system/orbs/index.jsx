@@ -1,5 +1,5 @@
 /**
- * S/Agency Orbs Design System - Soft Sunday Morning + LUMEN glass families
+ * Orbs Design System - Soft Sunday Morning + glass families
  */
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
@@ -11,7 +11,7 @@ export const ORB_PRESETS = {
   'dawn-glow': { label: 'Dawn Glow', gradient: 'radial-gradient(circle at 35% 30%, #ffffff 0%, #fff0c8 40%, #ffe8a0 100%)', glow: 'rgba(255, 240, 180, 0.55)' },
   'warm-haze': { label: 'Warm Haze', gradient: 'radial-gradient(circle at 35% 30%, #fff0d8 0%, #e8c070 40%, #c89840 80%, #a07020 100%)', glow: 'rgba(200, 150, 60, 0.45)' },
   'sunday-light': { label: 'Sunday Light', gradient: 'radial-gradient(circle at 35% 30%, #ffffff 0%, #fff6e0 35%, #f5e0b0 100%)', glow: 'rgba(255, 245, 200, 0.5)' },
-  lumen: { label: 'LUMEN', gradient: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.45) 0%, rgba(0,200,255,0.3) 25%, rgba(0,100,200,0.2) 55%, rgba(0,30,70,0.5) 100%)', glow: 'rgba(0, 220, 255, 0.55)' },
+  lumen: { label: 'CORE', gradient: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.45) 0%, rgba(0,200,255,0.3) 25%, rgba(0,100,200,0.2) 55%, rgba(0,30,70,0.5) 100%)', glow: 'rgba(0, 220, 255, 0.55)' },
   cyan: { label: 'Cyan Agent', gradient: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.5) 0%, rgba(0,230,255,0.35) 40%, rgba(0,120,180,0.3) 100%)', glow: 'rgba(0, 230, 255, 0.5)' },
   violet: { label: 'Violet Agent', gradient: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.5) 0%, rgba(180,140,255,0.4) 40%, rgba(100,60,180,0.35) 100%)', glow: 'rgba(167, 139, 250, 0.5)' },
   emerald: { label: 'Emerald Agent', gradient: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.5) 0%, rgba(80,230,180,0.4) 40%, rgba(20,140,100,0.35) 100%)', glow: 'rgba(52, 211, 153, 0.5)' },
