@@ -27,7 +27,7 @@ export function Sidebar({ active = 'dashboard', onNavigate }) {
             <span className="text-navy-900 font-bold text-sm">S/</span>
           </div>
           <div>
-            <div className="text-sm font-semibold tracking-wide text-cyan-50">S/AGENCY</div>
+            <div className="text-sm font-semibold tracking-wide text-cyan-50">AGENCY</div>
             <div className="text-[10px] text-cyan-400/70 font-mono tracking-wider">COMMAND</div>
           </div>
         </div>
