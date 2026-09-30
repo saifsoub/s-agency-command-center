@@ -1,5 +1,5 @@
 /**
- * Open-source telephony for S/Agency
+ * Open-source telephony.
  * LiveKit (Apache-2.0) · FreeSWITCH · Asterisk · Janus · Jitsi · Mediasoup
  */
 const listeners = new Map()
