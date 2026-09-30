@@ -23,7 +23,7 @@ export const telephony = {
     setTimeout(() => {
       this.state.participants = [
         { id: 'op', name: 'Operator', role: 'human' },
-        { id: 'lumen', name: 'LUMEN', role: 'agent' },
+        { id: 'lumen', name: 'CORE', role: 'agent' },
       ]
       emit('participants', this.state.participants)
     }, 400)
