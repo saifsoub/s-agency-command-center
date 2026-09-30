@@ -44,7 +44,7 @@ export function AppShell() {
         </main>
         <footer className="h-8 flex items-center justify-between px-4 border-t border-cyan-500/10 bg-navy-900/90 text-[10px] font-mono text-slate-500 flex-shrink-0">
           <div className="flex items-center gap-4">
-            <span>S/AGENCY · LUMEN v2.0</span>
+            <span>Command Center · v2.0</span>
             <span className="text-cyan-500/60">BASE44 SUPER-AGENT · STRIPE · OPEN TEL</span>
           </div>
           <div className="flex items-center gap-4">
