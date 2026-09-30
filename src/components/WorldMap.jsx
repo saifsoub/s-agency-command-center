@@ -93,7 +93,7 @@ export function WorldMap() {
           <LumenOrb size="lg" />
           <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-center whitespace-nowrap">
             <div className="text-[11px] font-semibold tracking-widest text-cyan-300 neon-text">
-              LUMEN
+              CORE
             </div>
             <div className="text-[9px] font-mono text-cyan-500/80 tracking-wider">
               FEDERATED AI CORE · ONLINE
