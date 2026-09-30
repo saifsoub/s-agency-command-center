@@ -1,5 +1,5 @@
 /**
- * Base44 SDK client (S/Agency LUMEN Super-Agent)
+ * Base44 SDK client
  * Production: swap for createClient from @base44/sdk
  */
 const isBrowser = typeof window !== 'undefined'
@@ -10,8 +10,8 @@ const store = {
   orbs: null,
   user: {
     id: 'usr_sa_l5',
-    name: 'S. Alsoub',
-    email: 'seif@s-agency.ai',
+    name: 'Demo User',
+    email: 'demo@example.com',
     clearance: 'L5',
     role: 'commander',
     orgId: 'org_sagency',
