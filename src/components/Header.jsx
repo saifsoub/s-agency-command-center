@@ -19,7 +19,7 @@ export function Header() {
       <div className="flex items-center gap-4">
         <div>
           <h1 className="text-lg font-semibold tracking-tight text-cyan-50 flex items-center gap-2">
-            S/AGENCY COMMAND CENTER
+            AGENCY COMMAND CENTER
             <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">
               TOP SECRET
             </span>
