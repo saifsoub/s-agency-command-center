@@ -1,9 +1,9 @@
-# S/Agency · LUMEN — Investor Deck Outline
+# Agency · LUMEN — Investor Deck Outline
 
 > Open in Gamma / Canva / Keynote. Dark navy + cyan neon aesthetic.
 
 ## 1. Title
-**S/AGENCY**  
+**AGENCY**  
 COMMAND CENTER · LUMEN  
 Federated AI Operations Platform · 2026
 
