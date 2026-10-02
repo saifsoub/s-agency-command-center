@@ -1,4 +1,4 @@
-# S/AGENCY COMMAND CENTER · LUMEN v2
+# Agency Command Center v2
 
 Production dark-mode multi-agent SaaS: glass orbs, Base44 super-agent, Stripe marketplace, TTS/TTSL, open telephony.
 
@@ -22,7 +22,7 @@ Production dark-mode multi-agent SaaS: glass orbs, Base44 super-agent, Stripe ma
 
 ## Design system
 
-`src/design-system/orbs` — Soft Sunday Morning + LUMEN glass families (matches orbs_library.png).
+`src/design-system/orbs` — Soft Sunday Morning + glass families (matches orbs_library.png).
 
 ## Stack
 
@@ -41,4 +41,4 @@ See `docs/BASE44_SUPER_AGENT.md` and `base44/config.jsonc`.
 npm install && npm run dev
 ```
 
-© S/Agency · LUMEN Intelligence & Operations
+© Agency Command Center

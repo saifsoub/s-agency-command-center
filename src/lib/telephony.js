@@ -1,5 +1,5 @@
 /**
- * Open-source telephony for S/Agency
+ * Open-source telephony.
  * LiveKit (Apache-2.0) · FreeSWITCH · Asterisk · Janus · Jitsi · Mediasoup
  */
 const listeners = new Map()
@@ -35,7 +35,7 @@ export const telephony = {
       if (generation !== sessionGeneration || !this.state.connected) return
       this.state.participants = [
         { id: 'op', name: 'Operator', role: 'human' },
-        { id: 'lumen', name: 'LUMEN', role: 'agent' },
+        { id: 'lumen', name: 'CORE', role: 'agent' },
         ...this.state.participants.filter((p) => p.id !== 'op' && p.id !== 'lumen'),
       ]
       emit('participants', this.state.participants)
