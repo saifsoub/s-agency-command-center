@@ -3,6 +3,12 @@
  * LiveKit (Apache-2.0) · FreeSWITCH · Asterisk · Janus · Jitsi · Mediasoup
  */
 const listeners = new Map()
+let participantTimer = null
+let sessionGeneration = 0
+function cancelParticipantTimer() {
+  clearTimeout(participantTimer)
+  participantTimer = null
+}
 function emit(event, payload) {
   const set = listeners.get(event)
   if (set) set.forEach((fn) => fn(payload))
@@ -15,21 +21,31 @@ export const telephony = {
     return () => listeners.get(event).delete(fn)
   },
   async connect({ room = 'lumen-command', mode = 'stub' } = {}) {
+    if (mode !== 'stub') throw new Error('Live telephony transport is not configured')
+    cancelParticipantTimer()
+    const generation = ++sessionGeneration
+    this.state.participants = []
     this.state.mode = mode
     this.state.room = room
     this.state.connected = true
     this.state.callId = `call_${Date.now()}`
     emit('connected', { room, mode, callId: this.state.callId })
-    setTimeout(() => {
+    participantTimer = setTimeout(() => {
+      participantTimer = null
+      if (generation !== sessionGeneration || !this.state.connected) return
       this.state.participants = [
         { id: 'op', name: 'Operator', role: 'human' },
         { id: 'lumen', name: 'CORE', role: 'agent' },
+        ...this.state.participants.filter((p) => p.id !== 'op' && p.id !== 'lumen'),
       ]
       emit('participants', this.state.participants)
     }, 400)
     return this.state
   },
   async disconnect() {
+    ++sessionGeneration
+    cancelParticipantTimer()
+    this.state.room = null
     this.state.connected = false
     this.state.participants = []
     this.state.callId = null
@@ -44,21 +60,19 @@ export const telephony = {
     return p
   },
   async dial(number) {
+    if (!this.state.connected) throw new Error('Not connected')
+    const generation = sessionGeneration
+    const callId = this.state.callId
     emit('dialing', { number })
     await new Promise((r) => setTimeout(r, 800))
-    emit('answered', { number, callId: this.state.callId })
+    if (generation !== sessionGeneration || !this.state.connected) {
+      return { ok: false, reason: 'session-ended', number }
+    }
+    emit('answered', { number, callId })
     return { ok: true, number }
   },
-  async connectLiveKit({ url, token, roomName }) {
-    try {
-      this.state.mode = 'livekit'
-      this.state.room = roomName
-      this.state.connected = true
-      emit('connected', { mode: 'livekit', room: roomName, url })
-      return { ok: true, note: 'Add livekit-client and wire Room.connect' }
-    } catch (e) {
-      return this.connect({ room: roomName, mode: 'stub' })
-    }
+  async connectLiveKit() {
+    return { ok: false, reason: 'transport-not-configured' }
   },
 }
 export default telephony
