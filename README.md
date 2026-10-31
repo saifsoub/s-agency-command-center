@@ -2,7 +2,7 @@
 
 Production dark-mode multi-agent SaaS: glass orbs, Base44 super-agent, Stripe marketplace, TTS/TTSL, open telephony.
 
-**Repo:** https://github.com/saifsoub/s-agency-command-center  
+**Repo:** https://github.com/s-os-agency/s-agency-command-center  
 **Vercel project:** `s-agency-command-center` (link GitHub App for auto-deploy)
 
 ## Routes
