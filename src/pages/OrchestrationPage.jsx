@@ -32,7 +32,7 @@ export default function OrchestrationPage() {
         <div className="flex items-center gap-3">
           <GitBranch className="w-5 h-5 text-cyan-400" />
           <div>
-            <h1 className="text-xl font-semibold text-cyan-50">ORCHESTRATION</h1>
+            <h1 className="text-xl font-semibold text-cyan-50">TEAMWORK</h1>
             <p className="text-xs text-slate-400 font-mono">Human-in-the-loop multi-agent pipelines</p>
           </div>
         </div>

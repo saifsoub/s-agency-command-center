@@ -31,7 +31,7 @@ export function AgentChat() {
         {
           id: Date.now() + 1,
           agent: 'CORE',
-          text: 'Acknowledged. Routing to appropriate agent swarm. Cognitive load +2%.',
+          text: 'Example reply. No agent has been started.',
           ts: new Date().toLocaleTimeString('en-GB', { hour12: false, timeZone: 'Asia/Dubai' }).slice(0, 8),
         },
       ])

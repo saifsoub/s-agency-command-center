@@ -121,7 +121,7 @@ export function WorldMap() {
         6 NODES · LIVE
       </div>
       <div className="absolute bottom-3 left-3 text-[9px] font-mono text-cyan-500/50">
-        COGNITIVE ASSURANCE ACTIVE
+        EXAMPLE WORKSPACE
       </div>
     </div>
   )

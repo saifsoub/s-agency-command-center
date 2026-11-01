@@ -24,7 +24,7 @@ export const FEEDS = [
 ]
 
 export const CHAT_LOG = [
-  { id: 1, agent: 'CORE', text: 'All federated nodes synchronized. Cognitive assurance online.', ts: '14:27:01' },
+  { id: 1, agent: 'CORE', text: 'Example team update.', ts: '14:27:01' },
   { id: 2, agent: 'AETHER', text: 'Requesting elevated clearance for RC-1987 deep audit.', ts: '14:26:48' },
   { id: 3, agent: 'ORACLE', text: 'Probability matrix updated. Recommend prioritizing SHJ free-zone cluster.', ts: '14:26:22' },
   { id: 4, agent: 'CORE', text: 'Clearance granted. AETHER — proceed with multi-agent swarm.', ts: '14:26:05' },
@@ -36,7 +36,7 @@ export const NAV_ITEMS = [
   { id: 'agents', label: 'AGENTS', icon: 'Bot' },
   { id: 'alerts', label: 'ALERTS', icon: 'Bell' },
   { id: 'compliance', label: 'COMPLIANCE', icon: 'ShieldCheck' },
-  { id: 'orchestration', label: 'ORCHESTRATION', icon: 'GitBranch' },
+  { id: 'orchestration', label: 'TEAMWORK', icon: 'GitBranch' },
   { id: 'mcps', label: 'MCPs', icon: 'Cable' },
   { id: 'plugins', label: 'PLUGINS', icon: 'Puzzle' },
   { id: 'marketplace', label: 'ORB MARKET', icon: 'ShoppingBag' },
