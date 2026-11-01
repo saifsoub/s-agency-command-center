@@ -22,7 +22,7 @@ export default function OrchestrationPage() {
       await new Promise((r) => setTimeout(r, 400))
     }
     await base44.jobs.create({ type: 'orchestration', name: 'Manual swarm run' })
-    toast.success('Orchestration job queued')
+    toast.success('Task coordination job queued')
     setRunning(false)
     setActive(0)
   }

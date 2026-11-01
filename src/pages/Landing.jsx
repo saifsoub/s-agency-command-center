@@ -31,7 +31,7 @@ export default function Landing() {
         {[
           { icon: Bot, title: 'Super-Agent', desc: 'Federated core with Base44 entities & swarm routing' },
           { icon: Shield, title: 'Compliance', desc: 'Tax, audit, risk matrices live for regulated theaters' },
-          { icon: Globe2, title: 'Orchestration', desc: 'MCPs, plugins, multi-agent workflows, human gates' },
+          { icon: Globe2, title: 'Task coordination', desc: 'Apps, tools, agent teams and your permissions' },
           { icon: Zap, title: 'Voice & Tel', desc: 'TTS/TTSL + open-source telephony (LiveKit / FreeSWITCH)' },
         ].map((f, i) => (
           <motion.div key={f.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }} className="glass-panel p-5">
